@@ -8,7 +8,7 @@ using MyShop.Core.Models;
 
 namespace MyShop.DataAccess.InMemory
 {
-    class ProductRepository
+    public class ProductRepository
     {
         ObjectCache cache = MemoryCache.Default;
         List<Product> products;
@@ -40,7 +40,7 @@ namespace MyShop.DataAccess.InMemory
             }
             else
             {
-                throw new Exception("Product no found");
+                throw new Exception("Product not found");
             }
         }
         public Product Find(string Id)
@@ -71,7 +71,7 @@ namespace MyShop.DataAccess.InMemory
             }
             else
             {
-                throw new Exception("Product no found");
+                throw new Exception("Product not found");
             }
         }
     }
