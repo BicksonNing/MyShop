@@ -12,7 +12,7 @@ namespace MyShop.DataAccess.SQL
     {
 
         public DataContext()
-            : base("Default Connection")
+            : base("DefaultConnection")
         {
 
         }

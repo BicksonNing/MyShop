@@ -52,6 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
+    <Compile Include="Migrations\202002030653304_Initial.cs" />
+    <Compile Include="Migrations\202002030653304_Initial.designer.cs">
+      <DependentUpon>202002030653304_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLRepository.cs" />
   </ItemGroup>
@@ -64,6 +69,11 @@
       <Project>{381C2134-89D0-4F9E-9157-F0E287C24D50}</Project>
       <Name>MyShop.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002030653304_Initial.resx">
+      <DependentUpon>202002030653304_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

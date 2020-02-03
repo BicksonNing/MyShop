@@ -201,11 +201,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001290253246_Initial.cs" />
-    <Compile Include="Migrations\202001290253246_Initial.designer.cs">
-      <DependentUpon>202001290253246_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -217,6 +212,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ProductImages\Chapter 2.jpg" />
+    <Content Include="Content\ProductImages\chapter 9.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -374,6 +371,7 @@
     <Content Include="Views\ProductCategoryManager\Create.cshtml" />
     <Content Include="Views\ProductCategoryManager\Delete.cshtml" />
     <Content Include="Views\ProductCategoryManager\Edit.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -407,11 +405,6 @@
       <Project>{f2d2a3c5-90df-4c78-820e-a4eba9f7f21c}</Project>
       <Name>MyShop.Services</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202001290253246_Initial.resx">
-      <DependentUpon>202001290253246_Initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
