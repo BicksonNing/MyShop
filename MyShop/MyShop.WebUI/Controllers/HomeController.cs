@@ -12,6 +12,19 @@ namespace MyShop.WebUI.Controllers
         {
             return View();
         }
+        
+        public ActionResult Details(string Id)
+        {
+            Product product = context.Find(Id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                return View(product);
+            }
+        }
 
         public ActionResult About()
         {
